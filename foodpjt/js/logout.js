@@ -7,7 +7,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 function logout() {
     firebase.auth().signOut().then(function() {
-        window.location.href = "../public/logout.html";
+        window.location.href = "../logout.html";
     })
     .catch(function(error) {
         window.alert("Error:" + error);
