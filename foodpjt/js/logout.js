@@ -1,6 +1,6 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if(!user) {
-        window.location.href="../public/index.html";
+        window.location.href="../index.html";
     } 
 });
 
@@ -13,4 +13,3 @@ function logout() {
         window.alert("Error:" + error);
     });
 }
-
