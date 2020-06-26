@@ -1,13 +1,12 @@
 var earningchart = document.getElementById("earning-chart");
+var earning = document.getElementById("earning-display");
+var earnings = document.getElementById("earnings");
  
 var earningtotal=0;
-db.collection("tiffen_service_details/vladblade12@gmail.com/acceptedOrders").get().then(function(querySnapshot){
+db.collection("tiffen_service_details/saibhavadeesh@gmail.com/acceptedOrders").get().then(function(querySnapshot){
     querySnapshot.forEach(function(doc){
         earningtotal += doc.data().totalCost;
     });
-    earningchart.innerHTML += "<h3>" + earningtotal + "</h3>";
-
-
     
     var data = [earningtotal];
     var labels = ['JUN']
