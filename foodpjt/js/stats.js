@@ -69,7 +69,7 @@ db.collection("customer_collection").get().then(function(querySnapshot){
 
 
 
-db.collection("vendor_collection/vendors/registered_vendors").get().then(function(querySnapshot){
+db.collection("tiffen_service_details").get().then(function(querySnapshot){
     querySnapshot.forEach(function(doc){
         vendors++;
     });
